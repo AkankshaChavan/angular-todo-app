@@ -1,0 +1,91 @@
+@import './../../app.component.scss';
+
+.todo-wrap {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+
+  .default {
+    display: block;
+    width: 100%;
+    padding: 30px 10px;
+    text-align: center;
+    color: $dark-blue;
+    font-size: 20px;
+  }
+
+  .form-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    background-color: $light-blue;
+    padding: 20px 10px;
+
+    input {
+      padding: 10px;
+      max-width: 225px;
+      width: 50%;
+      border-radius: 5px;
+    }
+  }
+
+  ul.todo-list {
+    list-style: none;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      margin: 10px 0;
+
+      input[type="checkbox"] {
+        accent-color: $dark-blue;
+      }
+
+      .todo-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+
+
+      }
+    }
+
+    li.green {
+      background-color: $sucess-bg;
+    }
+  }
+
+  button {
+    background-color: $dark-blue;
+    border: 1px solid $dark-blue;
+    color: $white;
+    padding: 10px;
+    width: 70px;
+    border-radius: 5px;
+  }
+
+  .gap-10 {
+    display: flex;
+    gap: 10px;
+  }
+}
