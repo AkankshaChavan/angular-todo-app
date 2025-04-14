@@ -3,7 +3,7 @@
         <input type="text" formControlName="title" placeholder="Task Name*" />
         <input type="text" formControlName="description" placeholder="Remark*" />
         <button type="submit">{{isEditMode?'Update':'Add'}}</button>
-        <button type="button" *ngIf="isEditMode" (click)="cancleEdit()">Cancle</button>
+        <button type="button" *ngIf="isEditMode" (click)="cancelEdit()">Cancel</button>
     </form>
 
     <div class="default" *ngIf="todos.length==0; todoList"><span>Please add your tasks</span></div>

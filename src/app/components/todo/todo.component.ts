@@ -93,7 +93,7 @@ export class TodoComponent implements OnInit {
     this.loadTodos();
   }
 
-  cancleEdit() {
+  cancelEdit() {
     this.isEditMode = false;
     this.todoForm.reset();
   }
